@@ -1,7 +1,10 @@
 import React from "react";
+import { Inter } from 'next/font/google'
+import styles from '@/styles/Home.module.css'
 
-export const Home: React.FunctionComponent = () => {
-    return (<div>
-        home
-    </div>)
+const inter = Inter({ subsets: ['latin'] })
+export default function Home() {
+    return (<h2 className={`${inter.className} ${styles.fontRed} text-3xl font-bold underline`}>
+        Home
+    </h2>)
 }
