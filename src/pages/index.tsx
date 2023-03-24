@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h2 className={inter.className}>
+        <h2 className={`${inter.className} text-[red] text-3xl font-bold underline`}>
           Home
         </h2>
       </main>
