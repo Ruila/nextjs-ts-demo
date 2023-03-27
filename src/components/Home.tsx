@@ -4,7 +4,7 @@ import styles from '@/styles/Home.module.css'
 import useSWR from 'swr'
 
 
-const fetcher = url => fetch(url).then(r => r.json());
+const fetcher = (url: string) => fetch(url).then(r => r.json());
 const inter = Inter({subsets: ['latin']})
 export default function Home() {
 
